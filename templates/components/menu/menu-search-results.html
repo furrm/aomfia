@@ -1,0 +1,9 @@
+<div class="slide-menu-section">
+    <!--<div>{{subscribedMatters}}</div>-->
+        <ul class="list-group">
+               <li class="list-group-item" ng-repeat="matter in subscribedMatters | filter:query">
+                   <a href ng-click="switchMatter(matter.matterId)">{{matter.matterId}}</a>
+                   <a href >{{matter.matterName}}</a>
+               </li>
+        </ul>
+</div>
